@@ -1,4 +1,4 @@
-'''*********************************************************************************************
+""""*********************************************************************************************
 Disclaimer: Almost all code is verbatim from "Python Crash Course" by Eric Matthes
             All resources was also found and provided in the author's github,
             https://ehmatthes.github.io/pcc/
@@ -6,7 +6,8 @@ Disclaimer: Almost all code is verbatim from "Python Crash Course" by Eric Matth
             The only difference is a slight alteration in the game_functions.py, where
             I inserted some variables to enable holding down space to fire the bullets. This
             was implemented to save my spacebar from inevitable doom.
-*********************************************************************************************'''
+*********************************************************************************************"""
+
 
 import pygame
 from pygame.sprite import Group
@@ -59,5 +60,6 @@ def run_game():
 
         gf.update_screen(ai_settings, screen, stats, sb, ship, aliens,
                          bullets, play_button)
+
 
 run_game()
