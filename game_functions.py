@@ -79,6 +79,11 @@ def check_play_button(ai_settings, screen, stats, sb, play_button, ship,
         create_fleet(ai_settings, screen, ship, aliens)
         ship.center_ship()
 
+        # Play Music
+        pygame.mixer.music.stop()
+        pygame.mixer.music.load('music/spider_dance.wav')
+        pygame.mixer.music.play(-1, 0.0)
+
 
 def fire_bullet(ai_settings, screen, ship, bullets):
     """Fire a bullet, if limit not reached yet."""
